@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {CountryService} from '../service/CountryService';
+import {CountryService} from './service/CountryService';
 import {InputText} from 'primereact/inputtext';
 import {InputTextarea} from 'primereact/inputtextarea';
 import {AutoComplete} from 'primereact/autocomplete';
@@ -11,7 +11,7 @@ import {RadioButton} from 'primereact/radiobutton';
 import {InputSwitch} from 'primereact/inputswitch';
 import {Dropdown} from 'primereact/dropdown';
 import {Password} from 'primereact/password';
-import {Spinner} from 'primereact/spinner';
+// import {Spinner} from 'primereact/spinner';
 import {Slider} from 'primereact/components/slider/Slider';
 import {ListBox} from 'primereact/listbox';
 import {Rating} from 'primereact/rating';
@@ -22,7 +22,7 @@ import {SelectButton} from 'primereact/selectbutton';
 import {Button} from 'primereact/button';
 import {SplitButton} from 'primereact/splitbutton';
 
-export class FormsDemo extends Component {
+export default class FormsDemo extends Component {
 
     constructor() {
         super();
@@ -98,11 +98,20 @@ export class FormsDemo extends Component {
         this.brands = ['Audi', 'BMW', 'Fiat', 'Ford', 'Honda', 'Jaguar', 'Mercedes', 'Renault', 'Volvo'];
     }
 
-    filterCountry(event) {
-        let results = this.state.countriesData.filter((country) => {
-            return country.name.toLowerCase().startsWith(event.query.toLowerCase());
-        });
-        this.setState({ filteredCountries: results });
+    // filterCountry(event) {
+    //     let results = this.state.countriesData.filter((country) => {
+    //         return country.name.toLowerCase().startsWith(event.query.toLowerCase());
+    //     });
+    //     this.setState({ filteredCountries: results });
+    // }
+
+    filterCountry =(event)=> {
+        console.log(this.state.countriesData)
+        // this.state.countriesData.filter((country) => {            
+        //     this.setState({ 
+        //         filteredCountries:  country.name.toLowerCase().startsWith(event.query.toLowerCase())
+        //     });
+        // });
     }
 
     filterBrands(event) {
@@ -287,10 +296,10 @@ export class FormsDemo extends Component {
                         <Password/>
                     </div>
             
-                    <div className="card card-w-title">
+                    {/* <div className="card card-w-title">
                         <h1>Spinner</h1>
                         <Spinner value={this.state.spinnerValue} onChange={event => this.setState({spinnerValue: event.value})} />
-                    </div>
+                    </div> */}
         
                     <div className="card card-w-title">
                         <h1>Slider</h1>

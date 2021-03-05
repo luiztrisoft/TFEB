@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Chart} from 'primereact/chart';
 
-export class ChartsDemo extends Component {
+export default class ChartsDemo extends Component {
 
     constructor() {
         super();

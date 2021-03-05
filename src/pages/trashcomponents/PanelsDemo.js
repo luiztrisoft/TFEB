@@ -6,7 +6,7 @@ import {TabView, TabPanel} from 'primereact/tabview';
 import {Toolbar} from 'primereact/toolbar';
 import {Button} from 'primereact/button';
 
-export class PanelsDemo extends Component {
+export default class PanelsDemo extends Component {
 
     render() {
         return (

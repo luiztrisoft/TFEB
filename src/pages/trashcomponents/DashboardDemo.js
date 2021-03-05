@@ -13,7 +13,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import timeGridPlugin from '@fullcalendar/timegrid';
 
-export class Dashboard extends Component {
+export default class DashboardDemo extends Component {
 
     constructor() {
         super();

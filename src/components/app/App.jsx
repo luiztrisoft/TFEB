@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import {AppTopbar} from '../appTopbar/AppTopbar';
 import AppMenu from '../appMenu/AppMenu';
 import Routes from '../../Routes';
-import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';

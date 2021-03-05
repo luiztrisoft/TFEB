@@ -18,14 +18,14 @@ th{
 }
 
 td  {
-    border: none !important;        
+    /* border: none !important;         */
     padding-top: 7px !important;
     padding-bottom: 7px !important;    
-    /* 
-    Estilização sem cor sim cor não
+    
+    /* Estilização sem cor sim cor não */
 
-    background-color: white !important;
-    border-bottom: 1px solid rgb(242, 242, 242) !important;
-    padding-top: 20px !important;
-    padding-bottom: 0px !important; */
+    /* background-color: white !important; */
+    /* border-bottom: 1px solid rgb(242, 242, 242) !important; */
+    /* padding-top: 20px !important; */
+    /* padding-bottom: 0px !important;  */
 }

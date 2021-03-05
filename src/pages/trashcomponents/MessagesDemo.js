@@ -5,7 +5,7 @@ import {Button} from 'primereact/button';
 import {Message} from 'primereact/message';
 import {InputText} from 'primereact/inputtext';
 
-export class MessagesDemo extends Component {
+export default class MessagesDemo extends Component {
 
     constructor() {
         super();

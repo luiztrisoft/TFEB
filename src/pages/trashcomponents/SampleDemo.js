@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {CountryService} from '../service/CountryService';
-import {CarService} from '../service/CarService';
-import {NodeService} from '../service/NodeService';
+// import {CountryService} from '../service/CountryService';
+// import {CarService} from '../service/CarService';
+// import {NodeService} from '../service/NodeService';
 import {InputText} from 'primereact/inputtext';
 import {InputTextarea} from 'primereact/inputtextarea';
 import {AutoComplete} from 'primereact/autocomplete';
@@ -16,7 +16,7 @@ import {PanelMenu} from 'primereact/panelmenu';
 import {InputMask} from 'primereact/inputmask';
 import {Dropdown} from 'primereact/dropdown';
 import {Password} from 'primereact/password';
-import {Spinner} from 'primereact/spinner';
+// import {Spinner} from 'primereact/spinner';
 import {Slider} from 'primereact/slider';
 import {ListBox} from 'primereact/listbox';
 import {RadioButton} from 'primereact/radiobutton';
@@ -33,7 +33,7 @@ import {ProgressBar} from 'primereact/progressbar';
 import {Dialog} from 'primereact/dialog';
 import {Column} from 'primereact/column';
 
-export class SampleDemo extends Component {
+export default class SampleDemo extends Component {
 
     constructor() {
         super();
@@ -234,9 +234,9 @@ export class SampleDemo extends Component {
             ]
         };
 
-        this.countryService = new CountryService();
-        this.carService = new CarService();
-        this.nodeService = new NodeService();
+        // this.countryService = new CountryService();
+        // this.carService = new CarService();
+        // this.nodeService = new NodeService();
 
         this.onCheckboxChange = this.onCheckboxChange.bind(this);
         this.filterCountry = this.filterCountry.bind(this);
@@ -246,12 +246,12 @@ export class SampleDemo extends Component {
     }
 
     componentDidMount(){
-        this.setState({countriesData: this.countryService.getCountries(this)});
-        this.carService.getCarsSmall().then(data => this.setState({dataTableValue: data}));
-        this.carService.getCarsLarge().then(data => this.setState({dataViewValue: data}));
-        this.nodeService.getTreeNodes(this).then(nodes => this.setState({treeData: nodes}));
-        this.carService.getCarsSmall().then(data => this.setState({picklistSourceCars: data}));
-        this.carService.getCarsSmall().then(data => this.setState({orderlistCars: data}));
+        // this.setState({countriesData: this.countryService.getCountries(this)});
+        // this.carService.getCarsSmall().then(data => this.setState({dataTableValue: data}));
+        // this.carService.getCarsLarge().then(data => this.setState({dataViewValue: data}));
+        // this.nodeService.getTreeNodes(this).then(nodes => this.setState({treeData: nodes}));
+        // this.carService.getCarsSmall().then(data => this.setState({picklistSourceCars: data}));
+        // this.carService.getCarsSmall().then(data => this.setState({orderlistCars: data}));
     }
 
     filterCountry(event) {
@@ -422,7 +422,7 @@ export class SampleDemo extends Component {
                                     <label htmlFor="spinner">Spinner</label>
                                 </div>
                                 <div className="p-col-12 p-md-4">
-                                    <Spinner value={this.state.spinnerValue} onChange={event => this.setState({spinnerValue: event.value})} />
+                                    {/* <Spinner value={this.state.spinnerValue} onChange={event => this.setState({spinnerValue: event.value})} /> */}
                                 </div>
 
                                 <div className="p-col-12 p-md-2">

@@ -3,6 +3,8 @@ import {NavLink} from 'react-router-dom'
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import whiteLogo from '../../assets/img/white-logo.png'
+
 class AppSubmenu extends Component {
     static defaultProps = {
         className: null,
@@ -127,15 +129,35 @@ export class AppMenu extends Component {
     }
      
     createMenu() {
+        /**
+         * 
+         * https://www.primefaces.org/diamond/icons.xhtml
+         * 
+         */
         this.menu = [
             {label: 'Dashboard', icon: 'pi pi-home', command: () => {window.location = '#/'}},            
             {
-                label: 'Sample', icon: 'pi pi-paperclip', badge: '1',
+                label: 'Form & Grid', icon: 'pi pi-paperclip', 
+                badge: '1',
                 items: [
                     {label: 'Formulário', icon: 'pi pi-user-plus', to: '/form'},
-                    {label: 'Tabela', icon: 'pi pi-list', to: '/table'}						
+                    {label: 'Tabela', icon: 'pi pi-list', to: '/grid'}						
                 ]
-            }
+            },{
+                label: 'Trash models', icon: 'pi pi-trash',
+                items: [
+                    {label: 'Charts Demo', to: '/charts'},
+                    {label: 'Forms Demo', to: '/forms'},
+                    {label: 'Menus Demo', to: '/menus'},
+                    {label: 'Panels Demo', to: '/panels'},
+                    {label: 'Sample Demo', to: '/samples'},
+                    // {label: 'Overlays Demo', to: '/overlay'},
+                    // {label: 'Messages Demo', to: '/messages'},
+                   
+                    {label: 'Empty Page', to: '/empty-page'},
+                ]
+            },
+            {label: 'Changes', icon: 'pi pi-clock', command: () => {window.location = '#/changes'}},   
         ];
     }
 
@@ -148,7 +170,7 @@ export class AppMenu extends Component {
         return (
             <div ref={(el) => this.sidebar = el} className={sidebarClassName} onClick={this.onSidebarClick}>
                 <div className="layout-logo">
-                    <img src="img/white-logo.png" style={{width: '8em'}} alt="TriSoft" />                    
+                    <img src={whiteLogo} style={{width: '8em'}} alt="TriSoft" />                    
                 </div>
                            
                 <div className="layout-menu-container">                    

@@ -11,7 +11,7 @@ import {PanelMenu} from 'primereact/panelmenu';
 import {TabMenu} from 'primereact/tabmenu';
 import {MegaMenu} from 'primereact/megamenu';
 
-export class MenusDemo extends Component {
+export default class MenusDemo extends Component {
 
     constructor() {
         super();
