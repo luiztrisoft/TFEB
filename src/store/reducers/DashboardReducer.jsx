@@ -15,7 +15,8 @@ const INITIAL_STATE = {
            {change:'Em AppMenu.jsx a rota /table foi modificada apra /Grid'},
            {change:'Arquivos de recursos agora estão em assets/img invés de  public'},
            {change:'Exemplo do Grid com paginação e suas propriedades'},
-           {change:'Dashboard informando modificações da última versão'}
+           {change:'Dashboard informando modificações da última versão'},
+           {change:'Inclusão do applymiddleware e redux-thunk'}
        ]
     },
     dashboardInfoV2: {
@@ -31,7 +32,7 @@ const INITIAL_STATE = {
             {change:'Instalação de Primereact 3.0.0, Redux, Axios e outros'},
             {change:'Definição de icones'},
             {change:'Páginas de exemplo'},
-            {change:'Componente visual de botão'},
+            {change:'Componente visual de botão'}           
         ]
         
      }
