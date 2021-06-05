@@ -1,8 +1,8 @@
 # NOTA IMPORTANTE
 Este repositório está configurado como template para uso (Settings/Template repository), sendo assim, ao criar um novo projeto podemos escolher este template para o novo projeto bastando apenas dar um novo nome a ele. Outra opção é clonar o repositório e instalar as dependencias como é explicado mais abaixo (o que eu não recomendo por ser mais trabalhoso).
 
-# Inicie clonando o repositório e já renomeando para seu futuro novo projeto
-git clone https://github.com/luiztrisoft/TFEB02 nome-projeto
+# Clone o repositório e já renomeie para seu futuro novo projeto
+git clone https://github.com/luiztrisoft/TFEB02 nome-novo-projeto
 
 # Instale as dependencias
 yarn install
